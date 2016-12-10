@@ -1,12 +1,12 @@
 (function () {
 'use strict';
 
-angular.module('Appication1', [])
-.controller('ListController', ListController);
+angular.module('LunchCheck', [])
+.controller('LunchCheckController', LunchCheckController);
 
-ListController.$inject = ['$scope'];
+LunchCheckController.$inject = ['$scope'];
 
-function ListController($scope) {
+function LunchCheckController($scope) {
 
   $scope.parseInput = function() {
     //Get the list from the page
