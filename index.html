@@ -2,9 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src = "angular.min.js"></script>
+    <script src = "app.js"></script>
     <title>Hello Coursera</title>
   </head>
-  <body>
-    <h1>Hello Coursera!</h1>
+  <body ng-app = 'Appication1'>
+    <h1>Javascript Page Assignment One</h1>
+    <div = ng-controller = "ListController">
+      <div>
+        <p>A space or null value between commas will be removed from list</p>
+        <input type = "text" style="border-color:{{warningColor}}" ng-model = "inputlist">
+        <button ng-click="parseInput()">Check If Too Much</button>
+      </div>
+      <div>
+      <span style="color:{{warningColor}}">{{warningLabel}}</span>
+    </div>
+    </div>
   </body>
 </html>
